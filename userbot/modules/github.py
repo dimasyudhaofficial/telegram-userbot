@@ -121,13 +121,13 @@ async def git_commit(file_name, mone):
         print(file_name)
         try:
             repo.create_file(
-                file_name, "Uploaded New Plugin", commit_data, branch="sql-extended"
+                file_name, "Uploaded New Plugin", commit_data, branch="master"
             )
             print("Committed File")
             ccess = GIT_REPO_NAME
             ccess = ccess.strip()
             await mone.edit(
-                f"`Commited On Your Github Repo`\n\n[Your Modules](https://github.com/{ccess}/tree/sql-extended/userbot/modules/)"
+                f"`Commited On Your Github Repo`\n\n[Your Modules](https://github.com/{ccess}/tree/master/userbot/modules/)"
             )
         except:
             print("Cannot Create Plugin")

@@ -2,7 +2,7 @@
 FROM heinzdf/oubnew:latest
  
 # Clone repo and prepare working directory
-RUN git clone -b sql-extended https://github.com/fortifying/OUBnew /OUBnew
+RUN git clone -b master https://github.com/dimasyudhaofficial/telegram-userbot /OUBnew
 RUN chmod 777 /OUBnew
 WORKDIR /OUBnew
  
